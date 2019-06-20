@@ -137,7 +137,6 @@ while camera.isOpened():
         break
     elif k == ord('b'):  # press 'b' to capture the background
         bgModel = cv2.createBackgroundSubtractorMOG2(0, bgSubThreshold)
-        #b.set_light(6, on_command)
         time.sleep(2)
         isBgCaptured = 1
         print('Background captured')
