@@ -138,7 +138,8 @@ while camera.isOpened():
     target = np.stack((thresh,) * 3, axis=-1)
     target = cv2.resize(target, (224, 224))
     target = target.reshape(1, 224, 224, 3)
-    #prediction, score = predict_rgb_image_vgg(target)
+    #real_time predtict
+    prediction, score = predict_rgb_image_vgg(target)
     
     
     # Keyboard OP
